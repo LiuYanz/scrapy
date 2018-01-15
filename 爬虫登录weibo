@@ -10,8 +10,10 @@ if __name__ == '__main__':
     driver.get('https://weibo.com')
     time.sleep(5)
     print(driver.title)
-    email = [1,7,8,6,2,8,4,0,1,8,8]
-    pwd = ['i','i','5','9','2','0','0','5','3','l','i','u','.']
+    #账号
+    email = [x,x,x]
+    #密码
+    pwd = ['x','x','x','x']
     loginname = driver.find_element_by_id('loginname')
     for i in email:
         loginname.send_keys(i)
